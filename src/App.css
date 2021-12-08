@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+
+
+@media screen {
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.colored-page{
+    background: rgb(168,255,120);
+    background: linear-gradient(90deg, rgba(168,255,120,1) 0%, rgba(120,255,214,1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+    height: 500px;
+    width: 400px;
+    border: none
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logincard{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field{
+    border: none;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    border-block-end: 2px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-field:focus{
+ 
+    border-block-end: 2px solid rgb(168,255,120);
+    background-color: #f7f7f7;
+    box-shadow: none !important;
+}
+
+*:focus {
+    outline: none;
+
+    
+}
+
+.submit{
+    border-radius: 20px;
+    background: rgb(168,255,120);
+    background: linear-gradient(90deg, rgba(168,255,120,1) 0%, rgba(120,255,214,1) 100%);
+    border: none;
+    font-size: 20px;
+
+}
+
+a{
+    color: black;
+}
+
+nav{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+.note-card{
+    max-height: 200px;
+    overflow: hidden;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border-radius: 5px;
+}
+
+.note-head{
+    position:sticky;
+    top: 0px;
+    background: rgb(168,255,120);
+    background: linear-gradient(90deg, rgba(168,255,120,1) 0%, rgba(120,255,214,1) 100%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.note-body{
+    padding: 20px;
 }
