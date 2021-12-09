@@ -1,7 +1,7 @@
 
 import './App.css';
 import Loginform from './components/Loginform';
-import Navbar from './components/Navbar';
+import NavbarComponent from './components/NavbarComponent';
 import Aboutpage from './pages/Aboutpage';
 import {
   BrowserRouter as Router,
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <NavbarComponent />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/login" element={<Loginform />} />
